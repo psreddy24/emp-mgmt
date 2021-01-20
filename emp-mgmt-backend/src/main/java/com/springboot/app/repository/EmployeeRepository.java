@@ -7,6 +7,4 @@ import com.springboot.app.model.Employee;
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
 	
-	
-
 }

@@ -15,6 +15,8 @@
 - [How to run locally?](#how-to-run-locally)
     - [Using local installation](#using-local-installation)
     - [Running in container](#using-docker)
+    - [Running unit\BDD tests for backend](#running-backend-test)
+    - [Running keram tests for frontend](#running-frontend-test)
 - [About Project](#about)
     - [Description](#description)
     - [Objective](#objective)
@@ -47,13 +49,16 @@
 ### Using local installation
 - Run the following command to run the back-end API
   ```
-  > mvn clean package -f ./emp-mgmt-backend
+  > cd emp-mgmt-backend
+  > mvn clean package
   ```
 - Run the following command to run the back-end API
   ```
+  > cd emp-mgmt-frontend
   > npm set audit false
   > npn install
   > npm install bootstrap@3.3.7 --save
+  > run npm install --save-dev @angular-devkit/build-angular@0.901.10
   > ng serve
   ```
 - Verify the installation by accessing the app on http://localhost:4200
@@ -66,6 +71,26 @@
     > docker-compose up
     ```
 - Verify the installation by accessing the app on http://localhost:8080
+
+[Back to TOC](#table-of-contents)
+
+#### Running backend test
+
+- Run the following commands
+    ```
+    > cd emp-mgmt-backend
+    > mvn test
+    ```
+
+[Back to TOC](#table-of-contents)
+
+#### Running frontend test
+
+- Run the following commands after building frontend as mentioned [above](#using-local-installation)
+    ```
+    > cd emp-mgmt-frontend
+    > ng test
+    ```
 
 [Back to TOC](#table-of-contents)
 
