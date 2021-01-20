@@ -39,27 +39,7 @@ export class CreateEmployeeComponent implements OnInit {
   }
 
   save() {
-    // const strPerson = this.employee.strPerson;
-    // console.log('strPerson = ' + strPerson);
-
-    // console.log('Posting... ' + this.person);
-    // this.person = new Person();
-    // this.person.personId = strPerson;
-    // console.log('this.Person.name =  ' + this.person.name);
-    // this.Persons = new Array(this.Person);
-    // console.log('this.Persons =  ' + this.Persons);
-    // this.employee.person = this.person;
-    // this.book.Persons.push(this.Person);
-
-
     console.log('employeeRequest... ' + this.employeeRequest);
-    // this.employee.employeeNum = this.employeeRequest.employeeNum;
-    // this.employee.employedDate = this.employeeRequest.employedDate;
-    // this.employee.terminatedDate = this.employeeRequest.terminatedDate;
-    // this.employee.person.personId = this.employeeRequest.personId;
-    // console.log('employee... ' + this.employee);
-
-
     this.employeeService.createEmployee(this.employeeRequest)
       .subscribe(data => console.log(data), error => console.log(error));
     this.employee = new Employee();
@@ -72,6 +52,8 @@ export class CreateEmployeeComponent implements OnInit {
   }
 
   gotoList() {
-    this.router.navigate(['']);
+    this.router.navigate(['']).then(() => {
+      window.location.reload();
+    });
   }
 }

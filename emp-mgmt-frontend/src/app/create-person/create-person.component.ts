@@ -40,6 +40,8 @@ export class CreatePersonComponent implements OnInit {
   }
 
   gotoList() {
-    this.router.navigate(['persons']);
+    this.router.navigate(['persons']).then(() => {
+      window.location.reload();
+    });
   }
 }
