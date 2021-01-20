@@ -3,8 +3,8 @@ services:
   backend:
     build: ./emp-mgmt-backend
     ports:
-      - "8080:8080"
+      - "9092:9092"
   frontend:
     build: ./emp-mgmt-frontend
     ports:
-      - "8080:8080"
+      - "4200:4200"
