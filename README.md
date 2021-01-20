@@ -23,7 +23,6 @@
     - [General Validations](#validation)
 - [Resources](#resources)
     - [Documentation](#documentation)
-    - [Metrics & Health](#metrics--health)
 - [Integration Tests](#integration-tests-postman)
     - [How to run integration tests](#how-to-run-integration-tests)
 
