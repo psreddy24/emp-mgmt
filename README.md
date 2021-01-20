@@ -13,8 +13,8 @@
 
 - [Pre requisites](#pre-requisites)
 - [How to run locally?](#how-to-run-locally)
-    - [Using local installation](#running-locally)
-    - [Running in container](#running-in-container)
+    - [Using local installation](#using-local-installation)
+    - [Running in container](#using-docker)
 - [About Project](#about)
     - [Description](#description)
     - [Objective](#objective)
@@ -43,22 +43,28 @@
     > cd emp-mgmt
     ```
 
-### Running locally
+### Using local installation
 - Run the following command to run the back-end API
   ```
   > mvn clean package -f ./emp-mgmt-backend
   ```
 - Run the following command to run the back-end API
   ```
-  > TODO --->>> npm install
+  > npm set audit false
+  > npn install
+  > npm install bootstrap@3.3.7 --save
+  > ng serve
   ```
-  
-#### Running in container
+- Verify the installation by accessing the app on http://localhost:4200
+
+#### Using docker
 
 - Run the following commands
     ```
     > docker-compose up
     ```
+- Verify the installation by accessing the app on http://localhost:8080
+
 [Back to TOC](#table-of-contents)
 
 ---
