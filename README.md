@@ -41,6 +41,7 @@
     ```
     > git clone https://github.com/psreddy24/emp-mgmt.git
     > cd emp-mgmt
+    > git checkout master
     ```
 
 ### Using local installation
