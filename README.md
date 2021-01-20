@@ -46,7 +46,7 @@
     > git checkout master
     ```
 
-### Using local installation
+#### Using local installation
 - Run the following command to run the back-end API
   ```
   > cd emp-mgmt-backend
@@ -67,7 +67,9 @@
 
 - Run the following commands
     ```
-    > mvn clean package -f ./emp-mgmt-backend
+    > cd emp-mgmt-backend
+    > mvn clean package
+    > cd ..
     > docker-compose up
     ```
 - Verify the installation by accessing the app on http://localhost:8080
