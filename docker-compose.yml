@@ -7,4 +7,4 @@ services:
   frontend:
     build: ./emp-mgmt-frontend
     ports:
-      - "4200:4200"
+      - "8080:80"
