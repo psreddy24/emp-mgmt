@@ -67,8 +67,8 @@ public class PersonController {
   @PutMapping(value = "/Person/{id}", produces = MediaType.APPLICATION_JSON_VALUE,
       consumes = MediaType.APPLICATION_JSON_VALUE)
   public String updatePersonById(@PathVariable("id") Integer id,
-      @Valid @RequestBody PersonRequest personRequest) {
-    Person person = personConverter.convert(personRequest);
+      @Valid @RequestBody Person person) {
+    // Person person = personConverter.convert(personRequest);
     return personService.updatePersonById(id, person);
   }
 
