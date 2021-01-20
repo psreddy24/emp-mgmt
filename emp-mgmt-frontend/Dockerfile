@@ -5,6 +5,7 @@ COPY package.json package-lock.json ./
 RUN npm set audit false
 RUN npm install
 RUN npm install bootstrap@3.3.7 --save
+RUN npm install --save-dev @angular-devkit/build-angular@0.901.10
 COPY . .
 RUN npm run build
 

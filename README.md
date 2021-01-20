@@ -62,6 +62,7 @@
 
 - Run the following commands
     ```
+    > mvn clean package -f ./emp-mgmt-backend
     > docker-compose up
     ```
 - Verify the installation by accessing the app on http://localhost:8080
