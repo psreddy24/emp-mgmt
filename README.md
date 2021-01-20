@@ -37,7 +37,7 @@
 ---
 ## How to run locally?
 
-- Step 1: Clone the repository and change directory as below
+- Clone the repository and change directory as below
     ```
     > git clone https://github.com/psreddy24/emp-mgmt.git
     > cd emp-mgmt
